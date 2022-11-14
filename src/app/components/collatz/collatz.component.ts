@@ -33,8 +33,6 @@ export class CollatzComponent implements OnInit {
   ngOnInit(): void {
     this._activedRouter.params.subscribe((parametros: Params) => {
 
-        //Hacemos el while para calcular el metodo Collatz
-        console.log(parametros['numero'])
         this.numero = parseInt(parametros['numero']);
 
         this.doCollatz();
