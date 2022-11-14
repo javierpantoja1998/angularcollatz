@@ -1,0 +1,9 @@
+<div *ngIf="numeros">
+  <ul id="menuCollatz" *ngFor="let num of numeros">
+    <li>
+      <a [routerLink]="['/collatz/', num]">COLLATZ{{num}}</a>
+    </li>
+  </ul>
+
+</div>
+
